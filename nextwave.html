@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Basic Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nextwave Technologies — Website Development Agency</title>
+  <meta name="description" content="Nextwave Technologies builds fast, modern, conversion-focused websites and web apps. Strategy, design, development, and growth under one roof.">
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- Favicons / App -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Social Cards -->
+  <meta property="og:title" content="Nextwave Technologies — Website Development Agency">
+  <meta property="og:description" content="High-end websites, scalable web apps, and measurable growth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Preconnect hints (add real domains when you know them) -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+  <!-- Place your CSS below later -->
+  <!-- <link rel="stylesheet" href="/assets/styles.css"> -->
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nextwave Technologies",
+    "url": "https://www.example.com/",
+    "logo": "https://www.example.com/logo.svg",
+    "sameAs": [],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@example.com",
+      "telephone": "+91-00000-00000",
+      "areaServed": "IN"
+    }]
+  }
+  </script>
+
+  <!-- Accessibility: skip link styles can be added later in CSS -->
+   <link rel="stylesheet" href="nextwave.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Top Announcement (optional) -->
+  <div role="region" aria-label="announcement">
+    <!-- Style later: make it a thin top bar -->
+    <p>🚀 We’re booking projects for Q4 — <a href="#contact">get a quote</a>.</p>
+  </div>
+
+  <!-- Header / Navigation -->
+    <header id="top" role="banner">
+  <div class="container">
+    <!-- Brand (Logo + Name) -->
+    <a href="/" class="brand" aria-label="Nextwave Technologies home">
+      <img src="asset/logo2.jpeg" alt="Nextwave Technologies Logo" class="logo">
+      <span class="brand-name">Nextwave Technologies</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav aria-label="Primary" role="navigation">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+    <!-- Dark/Light Mode Toggle Button -->
+<button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Mobile Menu -->
+    <button type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu" class="menu-toggle">
+      ☰
+    </button>
+  </div>
+</header>
+
+  <main id="main" tabindex="-1">
+    <!-- HERO -->
+    <section id="hero" aria-label="Hero">
+      <div class="container">
+        <h1>Nextwave Technologies</h1>
+        <p class="subtitle">We craft high-performance websites & web apps that convert.</p>
+        <p class="tagline">High-end UI/UX • Clean code • SEO-ready • Analytics-driven</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Start a Project</a>
+          <a href="#work" class="btn-secondary">See Our Work</a>
+        </div>
+        <!-- Add a hero image or illustration later -->
+      </div>
+    </section>
+
+    <!-- TRUST / CLIENT LOGOS -->
+    <section id="trust" aria-label="Trusted by">
+      <div class="container">
+        <h2>Trusted by ambitious teams</h2>
+        <ul class="logo-strip" aria-label="Client logos">
+          <li><img src="/logos/client1.svg" alt="Client 1"></li>
+          <li><img src="/logos/client2.svg" alt="Client 2"></li>
+          <li><img src="/logos/client3.svg" alt="Client 3"></li>
+          <li><img src="/logos/client4.svg" alt="Client 4"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header>
+          <h2 id="services-title">Services — सेवाएं</h2>
+          <p>Strategy to ship: everything you need to launch and grow.</p>
+        </header>
+
+        <div class="grid services-grid">
+          <article class="card" aria-labelledby="svc1">
+            <h3 id="svc1">Custom Website Development</h3>
+            <p>Modern stacks, CMS integrations, blazing performance, and accessibility by default.</p>
+            <ul>
+              <li>Marketing sites & landing pages</li>
+              <li>Headless CMS (e.g., WordPress, Strapi)</li>
+              <li>Performance & Core Web Vitals</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="svc2">
+            <h3 id="svc2">eCommerce & Payments</h3>
+            <p>Conversion-focused storefronts with secure checkout and analytics.</p>
+            <ul>
+              <li>Shopify / WooCommerce / Custom</li>
+              <li>Product pages & funnels</li>
+              <li>Razorpay, Stripe, PayPal integration</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="svc3">
+            <h3 id="svc3">Web Apps & Dashboards</h3>
+            <p>Responsive, component-driven apps with real-time features.</p>
+            <ul>
+              <li>Admin dashboards & portals</li>
+              <li>APIs & integrations</li>
+              <li>Authentication & RBAC</li>
+            </ul>
+          </article>
+
+          <article class="card" aria-labelledby="svc4">
+            <h3 id="svc4">SEO, Analytics & Growth</h3>
+            <p>Technical SEO, structured data, performance audits, and experimentation.</p>
+            <ul>
+              <li>On-page & technical SEO</li>
+              <li>GA4 + Search Console setup</li>
+              <li>A/B testing & CRO</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="section-cta">
+          <a href="#contact" class="btn-primary">Get a custom proposal</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK / PORTFOLIO -->
+    <section id="work" aria-labelledby="work-title">
+      <div class="container">
+        <h2 id="work-title">Featured Work — हमारा काम</h2>
+
+        <div class="grid work-grid">
+          <figure class="work-item">
+            <a href="#" aria-label="Project Alpha case study">
+              <img src="/work/alpha.jpg" alt="Project Alpha preview">
+            </a>
+            <figcaption>
+              <h3>Project Alpha</h3>
+              <p>Headless marketing site with 98+ Lighthouse scores.</p>
+              <a href="#" class="text-link">Read case study →</a>
+            </figcaption>
+          </figure>
+
+          <figure class="work-item">
+            <a href="#" aria-label="Project Nova case study">
+              <img src="/work/nova.jpg" alt="Project Nova preview">
+            </a>
+            <figcaption>
+              <h3>Project Nova</h3>
+              <p>Shopify storefront with 22% conversion lift.</p>
+              <a href="#" class="text-link">Read case study →</a>
+            </figcaption>
+          </figure>
+
+          <figure class="work-item">
+            <a href="#" aria-label="Project Orbit case study">
+              <img src="/work/orbit.jpg" alt="Project Orbit preview">
+            </a>
+            <figcaption>
+              <h3>Project Orbit</h3>
+              <p>Realtime analytics dashboard for ops teams.</p>
+              <a href="#" class="text-link">Read case study →</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 id="process-title">Process — हमारा तरीका</h2>
+        <ol class="process-steps">
+          <li><strong>Discover:</strong> Goals, audience, and success metrics.</li>
+          <li><strong>Design:</strong> UX flows, wireframes, and visual system.</li>
+          <li><strong>Develop:</strong> Components, integrations, and QA.</li>
+          <li><strong>Deploy:</strong> CI/CD, monitoring, and analytics.</li>
+          <li><strong>Grow:</strong> SEO, experiments, and iteration.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PRICING (basic structure; fill in real data later) -->
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title">Pricing — मूल्य</h2>
+        <div class="grid pricing-grid">
+          <article class="plan" aria-labelledby="plan1">
+            <h3 id="plan1">Starter</h3>
+            <p class="price">₹ 7999</p>
+            <ul>
+              <li>Up to 5 pages</li>
+              <li>Basic SEO setup</li>
+              <li>Contact form</li>
+            </ul>
+            <a href="#contact" class="btn-secondary">Choose plan</a>
+          </article>
+
+          <article class="plan highlight" aria-labelledby="plan2">
+            <h3 id="plan2">Growth</h3>
+            <p class="price">₹ 9999</p>
+            <ul>
+              <li>Custom design system</li>
+              <li>Blog & CMS</li>
+              <li>Performance optimization</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Choose plan</a>
+          </article>
+
+          <article class="plan" aria-labelledby="plan3">
+            <h3 id="plan3">Scale</h3>
+            <p class="price">₹ 14999</p>
+            <ul>
+              <li>Complex integrations</li>
+              <li>Advanced analytics</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a href="#contact" class="btn-secondary">Choose plan</a>
+          </article>
+        </div>
+        <p class="footnote">Custom enterprise quotes available.</p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">Message by founders </h2>
+        <div class="grid testimonials-grid">
+          <blockquote>
+            <p>“At Nextwave Technologies, our vision is simple — to empower businesses with websites that don’t just look beautiful, but also perform seamlessly. We believe every brand deserves a powerful online presence, and that’s what drives us every single day.”</p>
+            <footer>— Bhavishay Malik, Co-founder & CEO</footer>
+          </blockquote>
+          <blockquote>
+            <p>We started Nextwave Technologies with a mission: to bring creativity and technology together. Every project we take on is a promise — a promise to deliver innovation, quality, and long-term value for our clients.</p>
+            <footer>— Ayush Nain, Co-founder & CTO</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (with FAQPage schema) -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">FAQ — अक्सर पूछे जाने वाले प्रश्न</h2>
+        <details>
+          <summary>Project timeline?</summary>
+          <p>Typical marketing sites: 3–6 weeks. Web apps vary by scope.</p>
+        </details>
+        <details>
+          <summary>Do you provide content/design?</summary>
+          <p>Yes — end-to-end: UX, UI, copy, illustrations as needed.</p>
+        </details>
+        <details>
+          <summary>Tech stack?</summary>
+          <p>Modern JS frameworks, headless CMS, and best-practice tooling.</p>
+        </details>
+      </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Project timeline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical marketing sites: 3–6 weeks. Web apps vary by scope."
+          }
+        },{
+          "@type": "Question",
+          "name": "Do you provide content/design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — end-to-end: UX, UI, copy, illustrations as needed."
+          }
+        },{
+          "@type": "Question",
+          "name": "Tech stack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modern JS frameworks, headless CMS, and best-practice tooling."
+          }
+        }]
+      }
+      </script>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <h2 id="blog-title">Insights — ब्लॉग</h2>
+        <article class="post">
+          <h3><a href="#">Design systems that scale</a></h3>
+          <p>How we ship faster with reusable components and strong tokens.</p>
+          <time datetime="2025-08-01">Aug 1, 2025</time>
+        </article>
+        <article class="post">
+          <h3><a href="#">Web vitals that actually matter</a></h3>
+          <p>A practical guide to hitting 95+ on real devices, not just lab.</p>
+          <time datetime="2025-07-15">Jul 15, 2025</time>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Start your project — संपर्क करें</h2>
+        <p>Tell us about your goals. We’ll get back within 1 business day.</p>
+
+        <form action="/api/contact" method="post" novalidate>
+          <fieldset>
+            <legend class="sr-only">Project inquiry form</legend>
+
+            <div class="grid form-grid">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+              <label for="company">Company (optional)</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+
+              <label for="budget">Estimated budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" selected disabled>Choose…</option>
+                <option>₹50k–₹1L</option>
+                <option>₹1L–₹5L</option>
+                <option>₹5L+</option>
+              </select>
+
+              <label for="timeline">Timeline</label>
+              <select id="timeline" name="timeline" required>
+                <option value="" selected disabled>Choose…</option>
+                <option>ASAP (0–4 weeks)</option>
+                <option>1–3 months</option>
+                <option>Flexible</option>
+              </select>
+
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="consent">
+              <input id="consent" name="consent" type="checkbox" required>
+              <label for="consent">I agree to the privacy policy.</label>
+            </div>
+
+            <button type="submit" class="btn-primary">Request proposal</button>
+          </fieldset>
+        </form>
+
+        <address>
+          <p><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+910000000000">+91 00000 00000</a></p>
+          <p><strong>Location:</strong> India</p>
+        </address>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER (optional) -->
+    <section id="subscribe" aria-labelledby="subscribe-title">
+      <div class="container">
+        <h2 id="subscribe-title">Stay in the loop</h2>
+        <form action="/api/subscribe" method="post" novalidate>
+          <label for="sub-email" class="sr-only">Email</label>
+          <input id="sub-email" name="email" type="email" placeholder="you@company.com" required>
+          <button type="submit" class="btn-secondary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <img src="/logo-mark.svg" alt="" width="32" height="32">
+        <p>© <span id="year">2025</span> Nextwave Technologies. All rights reserved.</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <ul aria-label="Social links">
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Legal / Sitemap -->
+    <div class="container legal">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+  </footer>
+
+  <!-- Place your JS below later -->
+  <!-- <script src="/assets/app.js" defer></script> -->
+   <script src="nextwave.js"></script>
+</body>
+</html>
